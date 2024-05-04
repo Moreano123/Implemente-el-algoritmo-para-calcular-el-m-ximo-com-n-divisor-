@@ -25,16 +25,9 @@ class TestMCD(unittest.TestCase):
     
     def test_mcd_cuatro_numeros(self):
         # Pruebas para la función mcd_cuatro_numeros
-        self.assertEqual(mcd_cuatro_numeros(12, 8, 30, 15), 2)
+        self.assertEqual(mcd_cuatro_numeros(12, 8, 30, 15), 1)
         self.assertEqual(mcd_cuatro_numeros(24, 36, 48, 60), 12)
         self.assertEqual(mcd_cuatro_numeros(18, 27, 36, 45), 9)  # Un ejemplo adicional
 
-def mcd_cuatro_numeros(num1, num2, num3, num4):
-    """
-    Calcula el máximo común divisor (MCD) de cuatro números.
-    """
-    mcd1 = mcd(num1, num2)
-    mcd2 = mcd(num3, num4)
-    return mcd(mcd1, mcd2)
 if __name__ == "__main__":
     unittest.main()
